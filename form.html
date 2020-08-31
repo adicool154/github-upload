@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Registration Form</title>
+	<style type="text/css">
+		.center{
+				border: solid;
+     			display: block;
+     			margin-left:auto;
+     			margin-right:auto;
+     			width:50%;
+		}
+
+		input
+		{
+				text-align: center;
+		}
+	</style>
+</head>
+<body style="background-color: tomato">
+
+<form action="results.html" method="GET" enctype="multipart/form-data" style="background-color: lightblue" class="center">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="username" required>
+  </div><hr/>
+  <br>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+  </div><hr/>
+  <br>
+  <div>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="1" max="200" step="5">
+  </div><hr/>
+   <br>
+  <div>
+    <label for="date">Birthdate</label>
+    <input type="date" name="date" id="date" min="2019-06-10">
+  </div><hr/>
+   <br>
+  <div>
+    <b>Favorite Food</b>
+    <div>
+      <label for="banana">Banana</label>
+      <input type="checkbox" name="banana" id="banana">
+    </div>
+     <br>
+    <div>
+      <label for="apple">Apple</label>
+      <input type="checkbox" name="apple" id="apple">
+    </div>
+  </div><hr/>
+   <br>
+  <div>
+    Gender
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </div>
+    <div>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    </div>
+  </div><hr/>
+  <div>
+    <label for="eyeColor">Eye Color</label>
+    <select name="eyeColor" id="eyeColor" multiple>
+      <option value="Green">Green</option>
+      <option label="Red" value="Red"></option>
+    </select>
+  </div><hr/>
+  <div>
+    <label for="bio">Bio</label>
+    <textarea id="bio" name="bio"></textarea>
+  </div><hr/>
+  <input type="hidden" name="hidden" value="hi">
+  <div>
+    <label for="file">File</label>
+    <input id="file" type="file" name="file">
+  </div><hr/>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+  </div><hr/>
+  <div>
+    <label for="url">URL</label>
+    <input type="url" name="url" id="url">
+  </div><hr/>
+  <div>
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color">
+  </div><hr/>
+  <div>
+    <label>
+      Password
+      <input type="password" name="password" required>
+    </label>
+  </div><hr/>
+  <button type="reset" class="center">Reset</button>
+  <br>
+  <button type="submit" class="center">Submit</button>
+</form>
+
+</body>
+</html>
